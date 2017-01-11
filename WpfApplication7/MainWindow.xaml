@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApplication7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Ustaw Lekarza" HorizontalAlignment="Left" Margin="70,51,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button x:Name="Kol" Content="Dopisz do kolejki" HorizontalAlignment="Left" Margin="70,97,0,0" VerticalAlignment="Top" Width="115" Height="25" Click="Kol_Click"/>
+        <Grid HorizontalAlignment="Left" Height="212" Margin="59,34,0,0" VerticalAlignment="Top" Width="141">
+            <Button x:Name="Bad" Content="Wykonaj Badanie" HorizontalAlignment="Left" Margin="11,164,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+        </Grid>
+        <Button x:Name="Por" Content="Wykonaj Poradę" HorizontalAlignment="Left" Margin="70,142,0,0" VerticalAlignment="Top" Width="115"/>
+        <Button Content="Generuj Raport" HorizontalAlignment="Left" Margin="70,286,0,0" VerticalAlignment="Top" Width="115"/>
+        <Grid HorizontalAlignment="Left" Height="124" Margin="205,63,0,0" VerticalAlignment="Top" Width="289">
+            <Label Content="Imie i nazwisko lekarza" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" Width="140"/>
+            <TextBox x:Name="ImieLek" HorizontalAlignment="Left" Height="23" Margin="169,46,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="69"/>
+            <Label Content="Specjalnosc" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="Specjal" HorizontalAlignment="Left" Height="23" Margin="169,93,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="54"/>
+        </Grid>
+        <Grid x:Name="GPac" HorizontalAlignment="Left" Height="101" Margin="233,217,0,0" VerticalAlignment="Top" Width="285">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="99*"/>
+            </Grid.RowDefinitions>
+            <Label Content=" imie pacjenta i nazwisko" HorizontalAlignment="Left" Margin="0,9.6,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.842,0.296" Width="181" Grid.Row="1"/>
+            <Label Content="Wiek" HorizontalAlignment="Left" Margin="10,34.459,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+            <Label Content="Choroba" HorizontalAlignment="Left" Margin="10,65.459,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+            <TextBox x:Name="im" HorizontalAlignment="Left" Height="23" Margin="186,11.6,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="89" Grid.Row="1"/>
+            <TextBox x:Name="w" HorizontalAlignment="Left" Height="23" Margin="66,44.459,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="89" Grid.Row="1"/>
+            <TextBox x:Name="ch" HorizontalAlignment="Left" Height="23" Margin="66,72.459,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="89" Grid.Row="1"/>
+            <Button Content="Dodaj" HorizontalAlignment="Left" Margin="186,65.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        </Grid>
+
+    </Grid>
+</Window>
